@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Computer Science ePortfolio featuring HouseFactor, a real estate decision-support capstone project.">
+  <title>Computer Science ePortfolio | HouseFactor</title>
+  <style>
+    :root { --ink:#1d2b36; --muted:#52616d; --green:#2c6e64; --cream:#f6f5f0; --line:#dfe5e3; --white:#fff; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; background: var(--cream); color: var(--ink); line-height: 1.6; }
+    a { color: var(--green); }
+    a:focus-visible { outline: 3px solid #ca9f68; outline-offset: 4px; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    .topbar { background: var(--white); border-bottom: 1px solid var(--line); }
+    .topbar .wrap { min-height: 74px; display: flex; justify-content: space-between; align-items: center; gap: 22px; flex-wrap: wrap; padding: 12px 0; }
+    .brand { font-size: 1.06rem; font-weight: 750; letter-spacing: -.02em; color: var(--ink); text-decoration: none; }
+    nav { display: flex; flex-wrap: wrap; gap: 19px; }
+    nav a { color: var(--muted); font-size: .93rem; font-weight: 600; text-decoration: none; }
+    nav a:hover { color: var(--green); text-decoration: underline; }
+    .hero { padding: 90px 0 84px; background: linear-gradient(145deg, #233b3a, #2e625a); color: var(--white); }
+    .eyebrow { text-transform: uppercase; letter-spacing: .13em; font-weight: 750; font-size: .75rem; opacity: .9; }
+    .hero h1 { font-size: clamp(2.3rem, 5vw, 4.3rem); line-height: 1.09; letter-spacing: -.045em; max-width: 830px; margin: 18px 0; }
+    .hero p { max-width: 670px; font-size: 1.1rem; color: #e3eeeb; }
+    .tag { display: inline-block; margin-top: 18px; padding: 7px 13px; border-radius: 100px; border: 1px solid #97bcb3; font-size: .83rem; color: #e3eeeb; }
+    main section { padding: 61px 0 15px; }
+    h2 { font-size: clamp(1.6rem, 2.9vw, 2rem); letter-spacing: -.025em; margin: 0 0 12px; }
+    .intro { color: var(--muted); max-width: 740px; margin: 0 0 25px; }
+    .feature { background: var(--white); border: 1px solid var(--line); border-radius: 18px; padding: 30px; box-shadow: 0 9px 27px #1c303014; }
+    .feature h3 { margin: 7px 0 10px; font-size: 1.75rem; letter-spacing: -.025em; }
+    .kicker { font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 800; color: var(--green); }
+    .feature p { max-width: 790px; color: var(--muted); }
+    .chips { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 18px; }
+    .chips span { background: #edf4f1; border-radius: 30px; padding: 6px 11px; font-size: .8rem; font-weight: 650; color: #265b52; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .card { background: var(--white); padding: 24px; border-radius: 15px; border: 1px solid var(--line); }
+    .number { color: var(--green); font-size: .82rem; font-weight: 800; letter-spacing: .08em; }
+    .card h3 { margin: 9px 0; font-size: 1.16rem; }
+    .card p { color: var(--muted); margin: 0; font-size: .94rem; }
+    .note { font-size: .94rem; color: var(--muted); }
+    .foot { margin-top: 60px; border-top: 1px solid var(--line); padding: 28px 0 38px; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 700px) { .hero { padding: 66px 0; } .cards { grid-template-columns: 1fr; } .feature { padding: 23px; } main section { padding-top: 48px; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top">Computer Science ePortfolio</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#project">HouseFactor</a>
+        <a href="#enhancements">Enhancements</a>
+        <a href="#portfolio">Portfolio Progress</a>
+      </nav>
+    </div>
+  </header>
+  <div id="top" class="hero">
+    <div class="wrap">
+      <div class="eyebrow">SNHU · CS-499 Capstone</div>
+      <h1>Building practical software that helps people make better decisions.</h1>
+      <p>This ePortfolio documents my work in software design and engineering, algorithms and data structures, and databases, including the development of my capstone project, HouseFactor.</p>
+      <span class="tag">Capstone project in progress</span>
+    </div>
+  </div>
+  <main class="wrap">
+    <section id="about">
+      <h2>About this portfolio</h2>
+      <p class="intro">I began studying computer science at Southern New Hampshire University in September 2025. I am interested in software engineering and building applications that solve real problems. This portfolio will show how I improve an existing course project, explain my technical choices, and reflect on what I learn along the way.</p>
+    </section>
+    <section id="project">
+      <h2>Featured capstone project</h2>
+      <div class="feature">
+        <div class="kicker">Proposed application · HouseFactor</div>
+        <h3>Compare homes with more confidence.</h3>
+        <p>HouseFactor is a planned real estate comparison and decision-support application. Building on my previous mobile event-tracking coursework, the goal is to help users organize properties, manage showings, save observations, and compare homes using their own priorities.</p>
+        <p>Rather than relying on a single overall rating, users will be able to adjust the importance of factors such as price, condition, and location. The application will then produce a clear, explainable ranking.</p>
+        <div class="chips"><span>Mobile application</span><span>Property ranking</span><span>SQLite</span><span>Secure data handling</span></div>
+      </div>
+    </section>
+    <section id="enhancements">
+      <h2>Three planned enhancements</h2>
+      <p class="intro">The same original course artifact will be enhanced in three areas to demonstrate growth across the core computer science categories.</p>
+      <div class="cards">
+        <article class="card"><div class="number">01 · SOFTWARE DESIGN</div><h3>A more useful app</h3><p>Extend the event tracker to handle properties and tours, with clearer navigation, modular code, validation, and testing.</p></article>
+        <article class="card"><div class="number">02 · ALGORITHMS</div><h3>Personalized rankings</h3><p>Use weighted scores and an efficient top-results selection approach, then evaluate correctness and performance.</p></article>
+        <article class="card"><div class="number">03 · DATABASES</div><h3>Organized, reliable data</h3><p>Expand SQLite storage for properties, showings, notes, and preferences, with safer queries, constraints, and indexes.</p></article>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio progress</h2>
+      <p class="intro">This site will be updated as the capstone progresses. The original artifact, code review, enhanced source code, enhancement narratives, and professional self-assessment will be added as they are completed.</p>
+      <p class="note"><strong>Current stage:</strong> Initial enhancement planning (Module One).</p>
+    </section>
+  </main>
+  <footer class="foot"><div class="wrap">Computer Science ePortfolio · Southern New Hampshire University · CS-499</div></footer>
+</body>
+</html>
